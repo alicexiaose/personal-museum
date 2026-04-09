@@ -1,0 +1,23 @@
+{
+  "name": "personal-museum",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "fonts:collect": "node scripts/font-subset/collect.mjs",
+    "fonts:subset": "python3 scripts/font-subset/subset.py",
+    "fonts:verify": "python3 scripts/font-subset/verify_subsets.py"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "ogl": "^1.0.11",
+    "pixi.js": "^8.6.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0"
+  }
+}
