@@ -56,7 +56,7 @@ const defaultConfig: MuseumBackgroundConfig = {
 export async function initMuseumBackground(
   initConfig: Partial<MuseumBackgroundConfig> = {},
   bgImagePath = '/pic/bg_museum.jpg',
-  displacePath = '/pic/displace%20map.png',
+  displacePath = '/pic/displace-map.png',
 ): Promise<MuseumBackgroundHandle> {
   let enabledConfig: MuseumBackgroundConfig = { ...defaultConfig, ...initConfig };
   let resolveFirstFrame!: () => void;
