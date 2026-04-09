@@ -4,6 +4,8 @@ import { ensureBoilFilter } from '../utils';
 const MUSEUM_TOP_BAR_ID = 'museum-top-bar';
 
 const PAYMENT_MD_URL = '/content/payment.md';
+const PROJECT_CONFIDENTIAL_NOTE =
+  '*受 B 端项目保密限制，本页仅展示部分项目片段。更多完整内容可参考我的简历与作品集。';
 
 export function createPaymentScene() {
   let root: HTMLDivElement | null = null;
@@ -364,6 +366,19 @@ export function createPaymentScene() {
       user-select: none;
     `;
     scrollInner.appendChild(tailImg);
+
+    const confidentialNote = document.createElement('div');
+    confidentialNote.textContent = PROJECT_CONFIDENTIAL_NOTE;
+    confidentialNote.style.cssText = `
+      margin: 2px 0 0 0;
+      font-family: 'Noto Sans SC', 'Source Han Serif CN';
+      font-size: 14px;
+      line-height: 1.6;
+      letter-spacing: 0.01em;
+      color: rgba(218, 213, 200, 0.42);
+      font-weight: 300;
+    `;
+    scrollInner.appendChild(confidentialNote);
 
     scrollViewport.appendChild(heroBand);
     scrollViewport.appendChild(scrollInner);
