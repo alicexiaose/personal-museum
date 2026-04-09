@@ -454,7 +454,7 @@ function ensureOverlayEl(): HTMLDivElement {
   const textureLayer = document.createElement('div');
   textureLayer.style.cssText = `
     position: absolute; inset: 0;
-    background-image: url('/dist/pic/texture%20map.png');
+    background-image: url('/pic/texture-map.png');
     background-repeat: repeat;
     background-size: 248px 248px;
     opacity: 1;
