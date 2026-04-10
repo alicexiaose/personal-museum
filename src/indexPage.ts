@@ -12,6 +12,9 @@ import { createTicketScene } from './scenes/ticketScene.ts';
 import { createGuideScene } from './scenes/guideScene.ts';
 import { createShow1Scene } from './scenes/show1Scene.ts';
 import { createShow2Scene } from './scenes/show2Scene.ts';
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
 
 // 避免顶层 await，以便 Vite 生产构建目标兼容 es2020
 void (async () => {
