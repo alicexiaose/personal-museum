@@ -12,6 +12,7 @@
     "fonts:verify": "python3 scripts/font-subset/verify_subsets.py"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "gsap": "^3.12.5",
     "ogl": "^1.0.11",
